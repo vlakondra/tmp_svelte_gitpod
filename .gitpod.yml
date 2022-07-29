@@ -9,6 +9,7 @@ ports:
 tasks:
   - init: cd vite-project && npm install
     command: |
+      cd vite-project
       export HMR_HOST=`gp url 5173`
       npm run dev
 
