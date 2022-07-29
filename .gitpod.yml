@@ -9,9 +9,11 @@ ports:
 # - init: cd vite-project && npm install
 # 
 tasks:
-  - before: |
+  - name: svelte
+    before: |
      cd vite-project
-  - init: npm install
+    init: |
+     npm install
     command: |
       # cd vite-project
       export HMR_HOST=`gp url 5173`
