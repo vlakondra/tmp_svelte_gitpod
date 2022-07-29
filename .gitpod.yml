@@ -9,7 +9,8 @@ ports:
 # - init: cd vite-project && npm install
 # 
 tasks:
-  - before: cd vite-project
+  - before: |
+     cd vite-project
   - init: npm install
     command: |
       # cd vite-project
